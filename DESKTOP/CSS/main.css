@@ -1,0 +1,90 @@
+body {
+    background-color: #25262c;
+    color: white;
+    font-family: Disbo;
+    overflow-x: hidden;
+}
+
+.navbar-custom {
+    -webkit-app-region: drag;
+    background-color: transparent;
+    --borderWidth: 1px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+
+}
+
+.navbar-custom::after {
+    content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #ff4141, #ffc13b, #62ff32, #00ccff, #9a2fff, #fd2cda);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: gradient 3s ease alternate infinite;
+  background-size: 200% 200%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+ul li a{
+    -webkit-app-region: no-drag;
+}
+
+.nav-link {
+    color: #aaaaaa;
+}
+
+.nav-link:hover {
+    color: white;
+    font-weight: 500;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.btn-group button, div.btn-group button.close {
+    -webkit-app-region: no-drag;
+    border: 0px solid transparent; /* Green border */
+    background-color: transparent;
+    color: white; /* White text */
+    cursor: pointer; /* Pointer/hand icon */
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: right;
+    align-content: right;
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #222;
+  }
+
+  .btn-group button.exit:hover {
+    background-color: rgb(250, 77, 77);
+  }
+
+
+
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+  @font-face {
+      font-family: Disbo;
+      src: url('../../Font.ttf');
+  }

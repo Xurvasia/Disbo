@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+    margin: auto;
+    color: white;
+    background-color: #101432;
+    align-content: center;
+    background: url("../IMG/bg.gif");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.progress-bar{
+    background-color: white;
+}
+
+.progress{
+    border: 1px solid white !important;
+}
